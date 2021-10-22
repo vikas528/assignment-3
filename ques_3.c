@@ -22,7 +22,7 @@ int main()
     //     printf("%d ", arr[i]);
     long long int n;
     scanf("%lld", &n);
-    printf("Prime factorization of %lld will be:\n", n);
+    printf("Prime factors of %lld will be:\n", n);
     
     while(n>1){
         printf("%lld ", arr[n]);
