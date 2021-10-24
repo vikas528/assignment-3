@@ -1,7 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 #define N 1000000
 
 int arr[N] = {0};
+
+void printArray(int arr[],int n){
+    for(int i=0; i<n; i++)
+        printf("%d ",arr[i]);
+    printf("\n");
+}
 
 void insertAtLast(int arr[], int n, int key){
     arr[n] = key;
@@ -152,14 +161,9 @@ void setToZero(int arr[],int n){
 
 void deletion(int arr[],int n){
     for(int i=0; i<n; i++)
-        free(arr[i]);
+        free(arr);
 }
 
-void printArray(int arr[],int n){
-    for(int i=0; i<n; i++)
-        printf("%d ",arr[i]);
-    printf("\n");
-}
 
 int main(){
     int n, m;
@@ -171,7 +175,7 @@ int main(){
     int key, i, j, r;
     int brr[100000];
     printf("Hello\n");
-    printf("Enter choice:\n0. All Operations Completed\n1. Insert item at last\n2. Insert Item At First\n3. Insert Item At Index\n4. DeleteItemFromLast\n5. Delete Item from First\n6. DeleteItemFromIndex\n7. Find Item Unsorted\n8. Find Item sorted\n9. Sort Array\n10. ExtractSubset\n11. DeleteSubset\n12. Split Into two Array\n13. m. CloneArray\n14. ShiftLeftArray\n15. ShiftRightArray\n 16. RotateArrayClockwise\n 17. RotateArrayAntiClockwise\n 18. FindMin\n20. FillArrayPseudoRandom\n21. FillArrayTrueRandom\n22. IncreaseArraySize\n23. SetArrayToZero\n24. DeleteAllItemOfArray\n25. DeleteArray\n26. AllocateArray\n27. PrintArray\n");
+    printf("Enter choice:\n0. All Operations Completed\n1. Insert item at last\n2. Insert Item At First\n3. Insert Item At Index\n4. DeleteItemFromLast\n5. Delete Item from First\n6. DeleteItemFromIndex\n7. Find Item Unsorted\n8. Find Item sorted\n9. Sort Array\n10. ExtractSubset\n11. DeleteSubset\n12. Split Into two Array\n13. m. CloneArray\n14. ShiftLeftArray\n15. ShiftRightArray\n16. RotateArrayClockwise\n17. RotateArrayAntiClockwise\n18. FindMin\n20. FillArrayPseudoRandom\n21. FillArrayTrueRandom\n22. IncreaseArraySize\n23. SetArrayToZero\n24. DeleteAllItemOfArray\n25. DeleteArray\n26. AllocateArray\n27. PrintArray\n");
     int choice;
     do {
         printf("\nEnter choice\n");
